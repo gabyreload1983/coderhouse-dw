@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* navbar */
+nav {
+  background-color: #4f2faa;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+}
+
+.nav__logo {
+  height: 40px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav__link {
+  padding: 20px;
+}
+
+/* main */
+main {
+  background-color: #000;
+}
+
+.main__title {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.main__image {
+  display: flex;
+  justify-content: center;
+  height: 700px;
+}
+
+/* projects */
+#myprojects {
+  background-color: #000;
+  padding: 50px;
+}
+
+.projects__title {
+  color: #fff;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.projects__grid {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  row-gap: 50px;
+}
+.projects__image {
+  width: 400px;
+}
+
+/* footer */
+footer {
+  background-color: #4f2faa;
+  padding: 50px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social__title {
+  text-align: center;
+}
+
+.social__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__icon {
+  padding: 15px;
+}
+
+.contact__title {
+  margin-bottom: 15px;
+}
+
+.contact__item {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.contact__image {
+  margin-right: 15px;
+}
+
+.footer__rights {
+  text-align: center;
+  color: #fff;
+  margin-top: 30px;
+}
+
+/* projects */
+#projects {
+  height: 700px;
+}
+
+#projects h2 {
+  font-size: 48px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* skills */
+#skills {
+  height: 700px;
+}
+
+#skills h2 {
+  font-size: 48px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* about */
+#about {
+  height: 700px;
+}
+
+#about h2 {
+  font-size: 48px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* contact */
+#contact h2 {
+  font-size: 48px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 30px;
+  margin: 10px auto 80px;
+}
+
+.form input {
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.form label {
+  margin-left: 10px;
+}
+
+.form textarea {
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#sumbit {
+  background-color: #4f2faa;
+  color: #fff;
+  cursor: pointer;
+}
