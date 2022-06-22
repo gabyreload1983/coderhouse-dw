@@ -140,35 +140,145 @@ footer h2 {
 
 /* projects */
 #projects {
-  height: 800px;
+  background-color: #000;
 }
 
 #projects h2 {
   font-size: 48px;
   text-align: center;
   padding-top: 100px;
+  color: #fff;
+}
+
+.content__projects {
+  padding: 50px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 140px 290px;
+  justify-content: center;
+}
+
+.project {
+  width: 400px;
+}
+
+.project__image {
+  width: 100%;
+  display: block;
+}
+
+.project__description {
+  background-color: #4f2faa;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+}
+
+.project__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.project__icon {
+  height: 34px;
 }
 
 /* skills */
 #skills {
-  height: 800px;
+  background-color: #000;
+  color: #fff;
 }
 
 #skills h2 {
   font-size: 48px;
   text-align: center;
+  margin-bottom: 80px;
   padding-top: 100px;
+  color: #fff;
+}
+
+.softSkills,
+.hardSkills {
+  padding: 50px 145px;
+}
+
+.softSkills__title,
+.hardSkills__title {
+  font-size: 36px;
+}
+
+.softSkills__list {
+  list-style: initial;
+  padding: 25px;
+}
+
+.softSkills__item {
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+.hardSkills__list {
+  width: 500px;
+}
+
+.hardSkills__item {
+  font-size: 20px;
+  padding: 20px;
 }
 
 /* about */
 #about {
-  height: 800px;
+  background-color: #000;
+  color: #fff;
+  padding: 0 145px;
 }
 
 #about h2 {
   font-size: 48px;
   text-align: center;
   padding-top: 100px;
+  color: #fff;
+  margin-bottom: 54px;
+}
+
+#about h3 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  margin-top: 58px;
+}
+
+#about p {
+  text-align: center;
+  margin-bottom: 14px;
+  font-size: 20px;
+}
+
+.hobbies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 120px;
+}
+
+.hobbies__image {
+  width: 380px;
+}
+
+.interests {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 120px;
+  padding-bottom: 55px;
+}
+
+.interests__image {
+  width: 380px;
 }
 
 /* contact */
