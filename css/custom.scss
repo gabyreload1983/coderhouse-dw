@@ -1,0 +1,530 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+$dark: #4f2faa;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.plantilla__grid {
+  display: grid;
+  grid-template-areas:
+    " header "
+    " main "
+    " footer ";
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #4f2faa;
+  padding: 50px 0 20px 0;
+}
+
+/* navbar */
+
+.nav__logo {
+  height: 35px;
+  margin-left: 15px;
+}
+
+// main
+
+#homeImage {
+  height: 100vh;
+  background-image: url("../images/selfi.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.homeImage__title {
+  color: #fff;
+  text-align: center;
+  font-size: 1.7rem;
+  padding-top: 40px;
+  max-width: 260px;
+  margin: auto;
+}
+
+/* myprojects */
+#homeProjects {
+  background-color: #000;
+  padding-bottom: 30px;
+}
+
+.homeProjects__title {
+  padding: 50px 0 30px 0;
+  color: #fff;
+  text-align: center;
+  font-size: 36px;
+}
+
+.homeProjects {
+  padding: 0 30px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+  padding-bottom: 30px;
+}
+
+.homeProjects__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+
+.homeProjects__image:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (min-width: 768px) {
+  .homeProjects {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+
+  .homeImage__title {
+    font-size: 2rem;
+    padding-top: 40px;
+    max-width: 310px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .homeProjects {
+    gap: 90px;
+    max-width: 1500px;
+  }
+}
+
+/* footer */
+
+footer h2 {
+  font-size: 30px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.social__icon {
+  padding: 15px;
+  transition: 0.5;
+}
+
+.social__icon:hover {
+  transform: scale(1.05);
+}
+
+.contact {
+  margin-bottom: 30px;
+}
+.contact__title {
+  margin-bottom: 15px;
+}
+
+.contact__link {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.contact__link:hover {
+  color: #000;
+}
+
+.contact__image {
+  margin-right: 15px;
+}
+
+.footer__logo {
+  height: 70px;
+  margin-bottom: 30px;
+}
+
+.footer__rights {
+  text-align: center;
+  color: #fff;
+  margin-top: 10px;
+}
+
+@media screen and(min-width:768px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+}
+@media screen and(min-width:992px) {
+  .footer__logo {
+    height: 100px;
+  }
+}
+
+/* projects */
+#projects {
+  background-color: #000;
+}
+
+#projects h2 {
+  font-size: 48px;
+  text-align: center;
+  padding-top: 50px;
+  color: #fff;
+  margin-bottom: 54px;
+}
+
+.content__projects {
+  padding: 0 30px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+  padding-bottom: 50px;
+}
+
+.project {
+  height: 100%;
+}
+
+.project__image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.project__description {
+  background-color: #4f2faa;
+  color: #fff;
+  padding: 15px;
+  font-size: 12px;
+  border-radius: 0 0 20px 20px;
+}
+
+.project__link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.project__icon {
+  height: 24px;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .content__projects {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+
+  .project__description {
+    font-size: 16px;
+  }
+
+  .project__icon {
+    height: 30px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .content__projects {
+    gap: 90px;
+    max-width: 1500px;
+  }
+}
+
+/* skills */
+#skills {
+  background-color: #000;
+  color: #fff;
+}
+
+#skills h2 {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 80px;
+  padding-top: 50px;
+}
+
+.softSkills__title {
+  font-size: 36px;
+  margin-left: 40px;
+}
+
+.softSkills {
+  display: flex;
+}
+
+.softSkills__list {
+  list-style: initial;
+  margin-left: 30px;
+}
+
+.softSkills__item {
+  padding: 15px 0;
+}
+
+.hardSkills {
+  margin-top: 40px;
+  padding-bottom: 30px;
+}
+
+.hardSkills__title {
+  font-size: 36px;
+  margin-left: 40px;
+}
+
+.hardSkillsGrid {
+  margin-right: 10px;
+  max-width: 500px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 3fr;
+}
+
+.hardSkills__logo {
+  height: 50px;
+  padding-right: 10px;
+  justify-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  .softSkills__item {
+    font-size: 20px;
+  }
+
+  .hardSkillsGrid {
+    max-width: 600px;
+  }
+
+  .hardSkills__logo {
+    height: 70px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .softSkills {
+    justify-content: center;
+  }
+
+  .softSkills__item {
+    font-size: 24px;
+  }
+  .softSkills__title {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .hardSkills__title {
+    margin-left: 0;
+    text-align: center;
+  }
+  .hardSkillsGrid {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+
+/* about */
+
+#about {
+  background-color: #000;
+  color: #fff;
+}
+
+#about h2 {
+  font-size: 48px;
+  text-align: center;
+  padding-top: 50px;
+  color: #fff;
+  margin-bottom: 54px;
+}
+
+#about h3 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  margin-top: 58px;
+}
+
+#about p {
+  text-align: center;
+  margin: 0 40px 40px 40px;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  #about p {
+    margin: 0 auto;
+    max-width: 80vw;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #about p {
+    max-width: 60vw;
+  }
+}
+
+.hobbies {
+  padding: 30px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+}
+
+.hobbies__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+@media screen and (min-width: 768px) {
+  .hobbies {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .hobbies {
+    gap: 90px;
+    max-width: 1500px;
+  }
+}
+
+.interests {
+  padding: 0 30px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+  padding-bottom: 30px;
+}
+
+.interests__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+@media screen and (min-width: 768px) {
+  .interests {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .interests {
+    gap: 90px;
+    max-width: 1500px;
+  }
+}
+
+/* contact */
+
+#main__contact {
+  background-image: url("../images/contact-image.jpg");
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+#contact h2 {
+  color: #fff;
+  font-size: 48px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  padding-bottom: 30px;
+  margin: 10px auto 0;
+}
+
+.form input {
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.form label {
+  color: white;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.form textarea {
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#submit {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #4f2faa;
+  color: #000;
+}
+
+@media screen and (min-width: 768px) {
+  .form {
+    max-width: 500px;
+  }
+}

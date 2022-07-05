@@ -10,135 +10,167 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/custom.min.css" />
     <title>Contact</title>
   </head>
   <body>
-    <header id="header">
-      <!-- navbar -->
-      <nav id="nav">
-        <a href="../index.html">
-          <img
-            class="nav__logo"
-            src="../images/Logo.svg"
-            alt="page logo, symbols: minor, forward slash and major"
-          />
-        </a>
+    <div class="plantilla__grid">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+              <img
+                class="nav__logo"
+                src="../images/Logo.svg"
+                alt="page logo, symbols: minor, forward slash and major"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="../pages/projects.html"
+                    >PROJECTS</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/skills.html">SKILLS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/about.html">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/contact.html">CONTACT</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main id="main__contact">
+        <section id="contact">
+          <h2>CONTACT</h2>
 
-        <ul class="nav">
-          <li>
-            <a class="nav__link" href="../pages/projects.html">PROJECTS</a>
-          </li>
-          <li>
-            <a class="nav__link" href="../pages/skills.html">SKILLS</a>
-          </li>
-          <li>
-            <a class="nav__link" href="../pages/about.html">ABOUT</a>
-          </li>
-          <li>
-            <a class="nav__link" href="../pages/contact.html">CONTACT</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main id="main__contact">
-      <section id="contact">
-        <h2>CONTACT</h2>
+          <form class="form" action="">
+            <label for="firstName">FIRST NAME</label>
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              placeholder="First Name"
+            />
 
-        <form class="form" action="">
-          <label for="firstName">FIRST NAME</label>
-          <input type="text" name="firstName" placeholder="First Name" />
-          <br />
-          <label for="lastName">LAST NAME</label>
-          <input type="text" name="lastName" placeholder="Last Name" />
-          <br />
-          <label for="email">EMAIL</label>
-          <input type="email" name="email" placeholder="Email" />
-          <br />
-          <label for="message">MESSAGE</label>
-          <textarea
-            placeholder="Leave me a message..."
-            name="message"
-            id="message"
-            cols="30"
-            rows="10"
-          ></textarea>
-          <br />
-          <input type="submit" id="submit" />
-        </form>
-      </section>
-    </main>
-    <footer>
-      <div class="footer">
-        <div class="social">
-          <h2 class="social__title">SOCIAL MEDIA</h2>
-          <a href="https://github.com/gabyreload1983" target="_blank">
-            <img
-              class="social__icon"
-              src="../images/social/GitHub.svg"
-              alt="icon github"
+            <label for="lastName">LAST NAME</label>
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              placeholder="Last Name"
             />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/estebangabrielgodoy/"
-            target="_blank"
-          >
+
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" id="email" placeholder="Email" />
+
+            <label for="message">MESSAGE</label>
+            <textarea
+              placeholder="Leave me a message..."
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+
+            <input type="submit" id="submit" />
+          </form>
+        </section>
+      </main>
+      <footer>
+        <div class="footer">
+          <div class="social">
+            <h2>SOCIAL MEDIA</h2>
+            <a href="https://github.com/gabyreload1983" target="_blank">
+              <img
+                class="social__icon"
+                src="../images/social/GitHub.svg"
+                alt="icon github"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/estebangabrielgodoy/"
+              target="_blank"
+            >
+              <img
+                class="social__icon"
+                src="../images/social/LinkedIn.svg"
+                alt="icon LinkedIn"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/estebangabrielgodoy/"
+              target="_blank"
+            >
+              <img
+                class="social__icon"
+                src="../images/social/Instagram.svg"
+                alt="icon Instagram"
+              />
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UClaO3kGHGcGWOPzGH--hIaQ/videos"
+              target="_blank"
+            >
+              <img
+                class="social__icon"
+                src="../images/social/YouTube.svg"
+                alt="icon YouTube"
+              />
+            </a>
+          </div>
+          <div class="contact">
+            <h2 class="contact__title text-center">CONTACT</h2>
+            <a class="contact__link" href="mailto:gabyreload@gmail.com">
+              <img
+                class="contact__image"
+                src="../images/social/mail.svg"
+                alt="icon mail"
+              />gabyreload@gmail.com</a
+            >
+            <a
+              class="contact__link"
+              href="https://web.whatsapp.com/send?l=es&phone=+5493476643800"
+              target="_blank"
+            >
+              <img
+                class="contact__image"
+                src="../images/social/WhatsApp.svg"
+                alt="icon whatsapp"
+              />+549 3476 643800</a
+            >
+          </div>
+          <a href="../index.html">
             <img
-              class="social__icon"
-              src="../images/social/LinkedIn.svg"
-              alt="icon LinkedIn"
-            />
-          </a>
-          <a
-            href="https://www.instagram.com/estebangabrielgodoy/"
-            target="_blank"
-          >
-            <img
-              class="social__icon"
-              src="../images/social/Instagram.svg"
-              alt="icon Instagram"
-            />
-          </a>
-          <a
-            href="https://www.youtube.com/channel/UClaO3kGHGcGWOPzGH--hIaQ/videos"
-            target="_blank"
-          >
-            <img
-              class="social__icon"
-              src="../images/social/YouTube.svg"
-              alt="icon YouTube"
+              class="footer__logo"
+              src="../images/Logo.svg"
+              alt="page logo, symbols: minor, forward slash and major"
             />
           </a>
         </div>
-        <div class="contact">
-          <h2 class="contact__title">CONTACTO</h2>
-          <a class="contact__link" href="mailto:gabyreload@gmail.com">
-            <img
-              class="contact__image"
-              src="../images/social/mail.svg"
-              alt="icon mail"
-            />gabyreload@gmail.com</a
-          >
-          <a
-            class="contact__link"
-            href="https://web.whatsapp.com/send?l=es&phone=+5493476643800"
-            target="_blank"
-          >
-            <img
-              class="contact__image"
-              src="../images/social/WhatsApp.svg"
-              alt="icon whatsapp"
-            />+549 3476 643800</a
-          >
-        </div>
-        <a href="../index.html">
-          <img
-            src="../images/Logo.svg"
-            alt="page logo, symbols: minor, forward slash and major"
-          />
-        </a>
-      </div>
-      <p class="footer__rights">All Rights Reserved</p>
-    </footer>
+        <p class="footer__rights">All Rights Reserved</p>
+      </footer>
+    </div>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
