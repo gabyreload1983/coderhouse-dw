@@ -4,195 +4,211 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="./css/custom.min.css" />
     <title>Gabriel Godoy</title>
+    <link rel="stylesheet" href="./css/custom.min.css" />
   </head>
   <body>
-    <div class="plantilla__index">
-      <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html">
-              <img
-                class="nav__logo"
-                src="./images/Logo.svg"
-                alt="page logo, symbols: minor, forward slash and major"
-              />
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    aria-current="page"
-                    href="./pages/projects.html"
-                    >PROJECTS</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/skills.html">SKILLS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/about.html">ABOUT</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/contact.html">CONTACT</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
-      <main>
-        <section id="homeImage">
-          <h1 class="homeImage__title">I'M GABRIEL GODOY WEB DEVELOPER</h1>
-        </section>
-        <section id="homeProjects">
-          <a href="./pages/projects.html">
-            <h2 class="homeProjects__title">MY PROJECTS</h2>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-custom fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-2" href="#">
+            <img
+              src="/images/Logo.svg"
+              alt=""
+              height="35"
+              class="d-inline-block align-text-top"
+            />
           </a>
-          <div class="homeProjects">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto pe-5">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="./pages/projects.html"
+                  >PROJECTS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/skills.html">SKILLS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/about.html">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contact.html">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main -->
+    <main class="bg-dark">
+      <div class="container-fluid p-0 vh-100 overflow-hidden main-image">
+        <h1 class="mt-5 pt-5 text-white text-center index-title">
+          I'M GABRIEL GODOY
+        </h1>
+        <h2 class="text-white text-center index-title">WEB DEVELOPER</h2>
+      </div>
+
+      <a href="#" class="text-decoration-none">
+        <h2 class="text-white text-center mt-5 mb-5">MY PROJECTS</h2>
+      </a>
+      <div class="container px-4 pb-5">
+        <div class="row g-5">
+          <div class="col-md-6">
             <a href="https://app-sinapsis.herokuapp.com/" target="_blank">
               <img
-                class="homeProjects__image"
-                src="./images/projects/sinapsis.png"
-                alt="image app sinaspis"
+                src="/images/projects/sinapsis.png"
+                class="img-fluid index-project"
+                alt=""
               />
             </a>
+          </div>
+          <div class="col-md-6">
             <a
               href="https://estudiocontablemugica.netlify.app/"
               target="_blank"
             >
               <img
-                class="homeProjects__image"
-                src="./images/projects/estudio.png"
-                alt="image app estudio contable mugica"
+                src="/images/projects/estudio.png"
+                class="img-fluid index-project"
+                alt=""
               />
             </a>
+          </div>
+          <div class="col-md-6">
             <a href="https://reloadlogin.herokuapp.com/" target="_blank">
               <img
-                class="homeProjects__image"
-                src="./images/projects/login.png"
-                alt="image app login"
+                src="/images/projects/login.png"
+                class="img-fluid index-project"
+                alt=""
               />
             </a>
+          </div>
+          <div class="col-md-6">
             <a href="https://reloadnotes.herokuapp.com/" target="_blank">
               <img
-                class="homeProjects__image"
-                src="./images/projects/notes.png"
-                alt="image app blog notes"
+                src="/images/projects/notes.png"
+                class="img-fluid index-project"
+                alt=""
               />
             </a>
+          </div>
+          <div class="col-md-6">
             <a href="https://proyectomosh.netlify.app/" target="_blank">
               <img
-                class="homeProjects__image"
-                src="./images/projects/moshify.png"
-                alt="image app moshfy"
+                src="/images/projects/moshify.png"
+                class="img-fluid index-project"
+                alt=""
               />
             </a>
+          </div>
+          <div class="col-md-6">
             <a href="https://gabyreload-tenzie.netlify.app/" target="_blank">
               <img
-                class="homeProjects__image"
-                src="./images/projects/tenzies.png"
-                alt="image app tenzies"
+                src="/images/projects/tenzies.png"
+                class="img-fluid index-project"
+                alt=""
               />
             </a>
           </div>
-        </section>
-      </main>
+        </div>
+      </div>
+    </main>
 
-      <footer>
-        <div class="footer">
-          <div class="social">
-            <h2>SOCIAL MEDIA</h2>
-            <a href="https://github.com/gabyreload1983" target="_blank">
-              <img
-                class="social__icon"
-                src="./images/social/GitHub.svg"
-                alt="icon github"
-              />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/estebangabrielgodoy/"
-              target="_blank"
-            >
-              <img
-                class="social__icon"
-                src="./images/social/LinkedIn.svg"
-                alt="icon LinkedIn"
-              />
-            </a>
-            <a
-              href="https://www.instagram.com/estebangabrielgodoy/"
-              target="_blank"
-            >
-              <img
-                class="social__icon"
-                src="./images/social/Instagram.svg"
-                alt="icon Instagram"
-              />
-            </a>
-            <a
-              href="https://www.youtube.com/channel/UClaO3kGHGcGWOPzGH--hIaQ/videos"
-              target="_blank"
-            >
-              <img
-                class="social__icon"
-                src="./images/social/YouTube.svg"
-                alt="icon YouTube"
-              />
-            </a>
+    <footer class="bg-custom">
+      <div class="container-xl pt-5 pb-3">
+        <div class="row">
+          <div class="col-md-5 col-lg-4 mb-5">
+            <h2 class="text-center fs-1">SOCIAL MEDIA</h2>
+            <div class="d-flex justify-content-center align-items-center">
+              <a href="https://github.com/gabyreload1983" target="_blank">
+                <img
+                  class="p-2 social-icon"
+                  src="./images/social/GitHub.svg"
+                  alt="icon github"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/estebangabrielgodoy/"
+                target="_blank"
+              >
+                <img
+                  class="p-2 social-icon"
+                  src="./images/social/LinkedIn.svg"
+                  alt="icon LinkedIn"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/estebangabrielgodoy/"
+                target="_blank"
+              >
+                <img
+                  class="p-2 social-icon"
+                  src="./images/social/Instagram.svg"
+                  alt="icon Instagram"
+                />
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UClaO3kGHGcGWOPzGH--hIaQ/videos"
+                target="_blank"
+              >
+                <img
+                  class="p-2 social-icon"
+                  src="./images/social/YouTube.svg"
+                  alt="icon YouTube"
+                />
+              </a>
+            </div>
           </div>
-          <div class="contact">
-            <h2 class="contact__title text-center">CONTACT</h2>
-            <a class="contact__link" href="mailto:gabyreload@gmail.com">
+          <div class="col-md-5 mb-5 col-lg-4 text-center">
+            <h2 class="text-center fs-1">CONTACT</h2>
+            <a
+              class="nav-link mb-2 text-white fs-5 footer-link"
+              href="mailto:gabyreload@gmail.com"
+            >
               <img
-                class="contact__image"
+                class="me-2"
                 src="./images/social/mail.svg"
                 alt="icon mail"
               />gabyreload@gmail.com</a
             >
             <a
-              class="contact__link"
+              class="nav-link mb-2 text-white fs-5 footer-link"
               href="https://web.whatsapp.com/send?l=es&phone=+5493476643800"
               target="_blank"
             >
               <img
-                class="contact__image"
+                class="me-2"
                 src="./images/social/WhatsApp.svg"
                 alt="icon whatsapp"
               />+549 3476 643800</a
             >
           </div>
-          <a href="#">
-            <img
-              class="footer__logo"
-              src="./images/Logo.svg"
-              alt="page logo, symbols: minor, forward slash and major"
-            />
-          </a>
+
+          <div class="col-md-2 mb-5 col-lg-4 text-center">
+            <a href="#" class="footer-link">
+              <img height="70" src="/images/Logo.svg" alt="" />
+            </a>
+          </div>
         </div>
-        <p class="footer__rights">All Rights Reserved</p>
-      </footer>
-    </div>
+      </div>
+      <p class="text-white text-center pb-3 m-0">All Rights Reserved</p>
+    </footer>
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>

@@ -4,184 +4,211 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-
+    <title>Gabriel Godoy</title>
     <link rel="stylesheet" href="../css/custom.min.css" />
-    <title>About</title>
   </head>
   <body>
-    <div class="plantilla__grid">
-      <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">
-              <img
-                class="nav__logo"
-                src="../images/Logo.svg"
-                alt="page logo, symbols: minor, forward slash and major"
-              />
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    aria-current="page"
-                    href="../pages/projects.html"
-                    >PROJECTS</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../pages/skills.html">SKILLS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../pages/about.html">ABOUT</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../pages/contact.html">CONTACT</a>
-                </li>
-              </ul>
-            </div>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-custom fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-2" href="../index.html">
+            <img
+              src="../images/Logo.svg"
+              alt=""
+              height="35"
+              class="d-inline-block align-text-top"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto pe-5">
+              <li class="nav-item">
+                <a class="nav-link" href="./projects.html">PROJECTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./skills.html">SKILLS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">CONTACT</a>
+              </li>
+            </ul>
           </div>
-        </nav>
-      </header>
-      <main>
-        <section id="about">
-          <h2 class="about__title">ABOUT</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo fuga
-            soluta repudiandae adipisci culpa iste ipsa vel eaque fugiat officia
-            optio, accusantium earum eligendi ut veritatis voluptatibus, qui
-            quam blanditiis?
-          </p>
+        </div>
+      </nav>
+    </header>
 
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo fuga
-            soluta repudiandae adipisci culpa iste ipsa vel eaque fugiat officia
-            optio, accusantium earum eligendi ut veritatis voluptatibus, qui
-            quam blanditiis?
-          </p>
+    <!-- main -->
+    <main class="bg-dark">
+      <h2 class="text-white text-center mb-5 about-title">ABOUT</h2>
+      <div class="container mb-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <p class="text-white text-center fs-5">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo
+              fuga soluta repudiandae adipisci culpa iste ipsa vel eaque fugiat
+              officia optio, accusantium earum eligendi ut veritatis
+              voluptatibus, qui quam blanditiis?
+            </p>
+            <p class="text-white text-center fs-5">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo
+              fuga soluta repudiandae adipisci culpa iste ipsa vel eaque fugiat
+              officia optio, accusantium earum eligendi ut veritatis
+              voluptatibus, qui quam blanditiis?
+            </p>
+          </div>
+        </div>
+      </div>
+      <h3 class="text-white text-center fs-1">HOBBIES</h3>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <p class="text-white text-center fs-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
+              illum? Quam consequatur, quidem aspernatur tenetur molestias
+              maxime ipsam et libero?
+            </p>
+          </div>
+        </div>
+        <div class="row g-5 m-0 pb-5">
+          <div class="col-12 col-lg-6">
+            <img
+              src="../images/hobbies/guitars.jpg"
+              class="img-object-fit border border-white"
+              alt=""
+            />
+          </div>
+          <div class="col-12 col-lg-6">
+            <img
+              src="../images/hobbies/natacion.JPG"
+              class="img-object-fit border border-white"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <h3 class="text-white text-center fs-1">INTERESTS</h3>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <p class="text-white text-center fs-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
+              illum? Quam consequatur, quidem aspernatur tenetur molestias
+              maxime ipsam et libero?
+            </p>
+          </div>
+        </div>
+        <div class="row g-5 m-0 pb-5">
+          <div class="col-12 col-lg-6">
+            <img
+              src="../images/interests/NodeJS.png"
+              class="img-object-fit border border-white"
+              alt=""
+            />
+          </div>
+          <div class="col-12 col-lg-6">
+            <img
+              src="../images/interests/ubuntu.png"
+              class="img-object-fit border border-white"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </main>
 
-          <h3>HOBBIES</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
-            illum? Quam consequatur, quidem aspernatur tenetur molestias maxime
-            ipsam et libero?
-          </p>
-          <div class="hobbies">
-            <div class="hobbies__image">
-              <img src="../images/hobbies/guitars.jpg" alt="" />
-            </div>
-            <div class="hobbies__image">
-              <img src="../images/hobbies/natacion.JPG" alt="" />
+    <footer class="bg-custom">
+      <div class="container-xl pt-5 pb-3">
+        <div class="row">
+          <div class="col-md-5 col-lg-4 mb-5">
+            <h2 class="text-center fs-1">SOCIAL MEDIA</h2>
+            <div class="d-flex justify-content-center align-items-center">
+              <a href="https://github.com/gabyreload1983" target="_blank">
+                <img
+                  class="p-2 social-icon"
+                  src="../images/social/GitHub.svg"
+                  alt="icon github"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/estebangabrielgodoy/"
+                target="_blank"
+              >
+                <img
+                  class="p-2 social-icon"
+                  src="../images/social/LinkedIn.svg"
+                  alt="icon LinkedIn"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/estebangabrielgodoy/"
+                target="_blank"
+              >
+                <img
+                  class="p-2 social-icon"
+                  src="../images/social/Instagram.svg"
+                  alt="icon Instagram"
+                />
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UClaO3kGHGcGWOPzGH--hIaQ/videos"
+                target="_blank"
+              >
+                <img
+                  class="p-2 social-icon"
+                  src="../images/social/YouTube.svg"
+                  alt="icon YouTube"
+                />
+              </a>
             </div>
           </div>
-          <h3>INTERESTS</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas nobis
-            quam obcaecati officia fugit alias molestiae saepe, natus doloribus
-            accusamus!
-          </p>
-          <div class="interests">
-            <div class="interests__image">
-              <img src="../images/interests/NodeJS.png" alt="" />
-            </div>
-            <div class="interests__image">
-              <img src="../images/interests/ubuntu.png" alt="" />
-            </div>
-          </div>
-        </section>
-      </main>
-      <footer>
-        <div class="footer">
-          <div class="social">
-            <h2>SOCIAL MEDIA</h2>
-            <a href="https://github.com/gabyreload1983" target="_blank">
-              <img
-                class="social__icon"
-                src="../images/social/GitHub.svg"
-                alt="icon github"
-              />
-            </a>
+          <div class="col-md-5 col-lg-4 mb-5 text-center">
+            <h2 class="text-center fs-1">CONTACT</h2>
             <a
-              href="https://www.linkedin.com/in/estebangabrielgodoy/"
-              target="_blank"
+              class="nav-link mb-2 text-white fs-5 footer-link"
+              href="mailto:gabyreload@gmail.com"
             >
               <img
-                class="social__icon"
-                src="../images/social/LinkedIn.svg"
-                alt="icon LinkedIn"
-              />
-            </a>
-            <a
-              href="https://www.instagram.com/estebangabrielgodoy/"
-              target="_blank"
-            >
-              <img
-                class="social__icon"
-                src="../images/social/Instagram.svg"
-                alt="icon Instagram"
-              />
-            </a>
-            <a
-              href="https://www.youtube.com/channel/UClaO3kGHGcGWOPzGH--hIaQ/videos"
-              target="_blank"
-            >
-              <img
-                class="social__icon"
-                src="../images/social/YouTube.svg"
-                alt="icon YouTube"
-              />
-            </a>
-          </div>
-          <div class="contact">
-            <h2 class="contact__title text-center">CONTACT</h2>
-            <a class="contact__link" href="mailto:gabyreload@gmail.com">
-              <img
-                class="contact__image"
+                class="me-2"
                 src="../images/social/mail.svg"
                 alt="icon mail"
               />gabyreload@gmail.com</a
             >
             <a
-              class="contact__link"
+              class="nav-link mb-2 text-white fs-5 footer-link"
               href="https://web.whatsapp.com/send?l=es&phone=+5493476643800"
               target="_blank"
             >
               <img
-                class="contact__image"
+                class="me-2"
                 src="../images/social/WhatsApp.svg"
                 alt="icon whatsapp"
               />+549 3476 643800</a
             >
           </div>
-          <a href="../index.html">
-            <img
-              class="footer__logo"
-              src="../images/Logo.svg"
-              alt="page logo, symbols: minor, forward slash and major"
-            />
-          </a>
+
+          <div class="col-md-2 mb-5 col-lg-4 text-center">
+            <a href="#" class="footer-link">
+              <img height="70" src="/images/Logo.svg" alt="" />
+            </a>
+          </div>
         </div>
-        <p class="footer__rights">All Rights Reserved</p>
-      </footer>
-    </div>
+      </div>
+      <p class="text-white text-center pb-3 m-0">All Rights Reserved</p>
+    </footer>
+
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
