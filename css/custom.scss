@@ -37,6 +37,12 @@ body {
   filter: brightness(0);
 }
 
+@media screen and(min-width:992px) {
+  .footer-logo {
+    height: 100px;
+  }
+}
+
 /* ------ INDEX ------ */
 
 /* main */
