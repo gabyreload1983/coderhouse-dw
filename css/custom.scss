@@ -72,6 +72,15 @@ body {
   background-position: top center;
 }
 
+.nav-link-project {
+  color: white;
+}
+
+.nav-link-project:hover {
+  color: #4f2faa;
+  transform: scale(1.05);
+}
+
 .index-project {
   transition: all 0.3s ease-in-out;
 }
