@@ -1,0 +1,20 @@
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+// Misc
+@import "./misc/variables";
+@import "./misc/normalize";
+
+// Partials
+@import "./partials/header";
+@import "./partials/footer";
+
+// Views
+@import "./views/home";
+@import "./views/projects";
+@import "./views/skills";
+@import "./views/about";
+@import "./views/contact";

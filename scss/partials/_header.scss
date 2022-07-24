@@ -1,0 +1,10 @@
+/* HEADER */
+header {
+  .header-link {
+    transition: all 0.3s;
+
+    &:hover {
+      filter: brightness(0);
+    }
+  }
+}

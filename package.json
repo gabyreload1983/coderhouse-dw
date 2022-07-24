@@ -1,5 +1,29 @@
 {
   "dependencies": {
     "bootstrap": "^5.2.0-beta1"
-  }
+  },
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  },
+  "name": "coderhouse-dw",
+  "description": "Curso Desarrollo Web",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-sass": "node-sass --include-path scss scss/custom.scss ./assets/css/main.css",
+    "watch-sass": "nodemon -e scss -x \"npm run build-sass\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabyreload1983/coderhouse-dw.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabyreload1983/coderhouse-dw/issues"
+  },
+  "homepage": "https://github.com/gabyreload1983/coderhouse-dw#readme"
 }

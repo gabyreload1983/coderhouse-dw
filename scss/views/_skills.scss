@@ -1,0 +1,38 @@
+.skills-title {
+  padding-top: $pt-title;
+  font-size: $fs-title;
+  animation-name: skills-title-effect;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.7s;
+}
+
+@keyframes skills-title-effect {
+  0% {
+    transform: translateX(1000px);
+  }
+
+  25% {
+    transform: translateX(-100px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.hardSkill-image {
+  height: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .hardSkill-image {
+    height: 70px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .softSkills-list {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,44 @@
+.project-title {
+  padding-top: $pt-title;
+  font-size: $fs-title;
+  animation-name: projects-title-effect;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.7s;
+}
+
+@keyframes projects-title-effect {
+  0% {
+    transform: translateX(-1000px);
+  }
+
+  25% {
+    transform: translateX(100px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.nav-link-custom {
+  img {
+    height: 30px;
+  }
+  span {
+    font-size: 12px;
+  }
+
+  &:hover {
+    filter: brightness(0);
+  }
+
+  @media screen and (min-width: 768px) {
+    img {
+      height: 39px;
+    }
+    span {
+      font-size: 16px;
+    }
+  }
+}

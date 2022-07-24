@@ -1,0 +1,43 @@
+.about-title {
+  font-size: $fs-title;
+  padding-top: $pt-title;
+  animation-name: about-title-effect;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+}
+
+@keyframes about-title-effect {
+  0% {
+    transform: translateX(50%);
+  }
+
+  25% {
+    transform: translateX(-50%);
+  }
+  50% {
+    transform: translateX(25%);
+  }
+  75% {
+    transform: translateX(-25%);
+  }
+  80% {
+    transform: translateX(15%);
+  }
+  85% {
+    transform: translateX(-15%);
+  }
+  90% {
+    transform: translateX(5%);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.img-object-fit {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
