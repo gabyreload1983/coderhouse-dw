@@ -1,6 +1,11 @@
-/* colors */
-$color-main: #4f2faa;
+/* map colors */
+$mycolors: (
+  color-main: #4f2faa,
+  color-secondary: #151515,
+  color-text: #eeeeee,
+);
 
 /* Sizes */
 $fs-title: 48px;
+$fs-text: 20px;
 $pt-title: 90px;

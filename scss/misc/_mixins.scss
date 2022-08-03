@@ -1,0 +1,16 @@
+@mixin backgroundImage($url, $size, $repeat, $position) {
+  height: 100vh;
+  background-image: url($url);
+  background-size: $size;
+  background-repeat: $repeat;
+  background-position: $position;
+}
+
+@mixin animation($name, $paddingTop, $fontSize, $duration) {
+  padding-top: $paddingTop;
+  font-size: $fontSize;
+  animation-name: $name;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: $duration;
+}

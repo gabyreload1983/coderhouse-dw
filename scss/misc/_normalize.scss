@@ -11,5 +11,5 @@ body {
 }
 
 .bg-custom {
-  background-color: $color-main;
+  background-color: map-get($mycolors, color-main);
 }

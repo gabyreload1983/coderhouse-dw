@@ -1,10 +1,5 @@
 .about-title {
-  font-size: $fs-title;
-  padding-top: $pt-title;
-  animation-name: about-title-effect;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in-out;
-  animation-duration: 1s;
+  @include animation(about-title-effect, $pt-title, $fs-title, 0.7s);
 }
 
 @keyframes about-title-effect {

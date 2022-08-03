@@ -1,8 +1,5 @@
 .index-title {
-  animation-name: index-title-effect;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  animation-duration: 1s;
+  @include animation(index-title-effect, null, null, 1s);
 }
 
 @keyframes index-title-effect {
@@ -16,20 +13,16 @@
 }
 
 .main-image {
-  height: 100vh;
-  background-image: url("../images/selfi.JPG");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
+  @include backgroundImage("../images/selfi.JPG", cover, no-repeat, top center);
 }
 
 .nav-link-project {
-  color: white;
+  color: map-get($mycolors, color-text);
   margin-bottom: 50px;
   transition: all 0.3s;
 
   &:hover {
-    color: $color-main;
+    color: map-get($mycolors, color-main);
     transform: scale(1.05);
   }
 
@@ -43,7 +36,7 @@
 
   &:hover {
     transform: scale(1.05);
-    box-shadow: 0px 0px 15px 15px $color-main;
+    box-shadow: 0px 0px 15px 15px map-get($mycolors, color-main);
   }
 }
 

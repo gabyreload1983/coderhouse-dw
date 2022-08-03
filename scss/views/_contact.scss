@@ -1,27 +1,24 @@
 .main-contact {
-  background-image: url("../images/contact-image.jpg");
-  min-height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
+  @include backgroundImage(
+    "../images/contact-image.jpg",
+    cover,
+    no-repeat,
+    top center
+  );
 }
 
 .contact-title {
-  font-size: $fs-title;
-  padding-top: $pt-title;
-  animation-name: contact-title-effect;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in-out;
-  animation-duration: 0.5s;
+  @include animation(contact-title-effect, $pt-title, $fs-title, 0.5s);
 }
 
 .btn-contact {
+  @extend .btn, .btn-dark;
   transition: all 0.3s;
   &:hover {
-    background-color: $color-main;
-    color: #000;
+    background-color: map-get($mycolors, color-main);
+    color: map-get($mycolors, color-secondary);
     font-weight: 700;
-    border: 2px solid white;
+    border: 2px solid map-get($mycolors, color-text);
   }
 }
 

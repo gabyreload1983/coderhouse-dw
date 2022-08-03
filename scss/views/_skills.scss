@@ -1,10 +1,5 @@
 .skills-title {
-  padding-top: $pt-title;
-  font-size: $fs-title;
-  animation-name: skills-title-effect;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in-out;
-  animation-duration: 0.7s;
+  @include animation(skills-title-effect, $pt-title, $fs-title, 0.7s);
 }
 
 @keyframes skills-title-effect {
