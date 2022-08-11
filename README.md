@@ -10,3 +10,5 @@ SEO:
 ## Se subio la pagina a netlify
 
 ## https://gabrielgodoy-dw.netlify.app/
+
+Se entrega proyecto final.
